@@ -15,7 +15,6 @@ html {
 
 
 
-body {}
 
 html,
 body {
@@ -141,4 +140,50 @@ header .fas {
     background-image: url('images/detBG.jpg');
     height: 100vh;
     background-size: auto;
+}
+
+.intro {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 55px;
+}
+
+.intro h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.sluzby-layout {
+    width: 1400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    top: -400px;
+}
+
+
+.sluzby-box {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #052237;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.sluzby-box p {
+    font-size: 13px;
 }
