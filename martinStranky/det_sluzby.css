@@ -14,7 +14,7 @@ html {
 }
 
 
-
+body {}
 
 html,
 body {
@@ -157,17 +157,27 @@ header .fas {
     font-weight: 300;
 }
 
+@media(max-width:1340px) {
+    .intro {
+        top: 100px;
+    }
+}
+
+@media(max-width:485px) {
+    .intro h1 {
+        font-size: 45px;
+    }
+}
 
 .sluzby-layout {
-    width: 1400px;
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    left: 50%;
-    transform: translate(-50%);
-    top: -400px;
+    justify-content: center;
+    margin: auto;
+    margin-top: -450px;
 }
 
 
@@ -183,7 +193,55 @@ header .fas {
     justify-content: space-evenly;
 }
 
+.sluzby-box h1 {
+    font-size: 25px;
+}
 
 .sluzby-box p {
     font-size: 13px;
+}
+
+@media(max-width:900px) {
+    .sluzby-layout {
+        margin-top: -500px;
+    }
+
+    .sluzby-box {
+        width: 300px;
+        height: 150px;
+    }
+
+    .sluzby-box h1 {
+        font-size: 20px;
+    }
+
+    .sluzby-box p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+.footer {
+    width: 100vw;
+    height: 50px;
+    background: #002B4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer h1 {
+    font-size: 15px;
+    color: #adadad;
+    font-weight: 200;
+}
+
+@media(max-width:485px) {
+    .footer {
+        margin-top: 50px;
+    }
 }
