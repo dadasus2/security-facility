@@ -151,6 +151,7 @@ header .fas {
 .uvod {
     position: relative;
     background-image: url('images/BGimages.jpg');
+    background-attachment: fixed;
     height: 100vh;
     background-position-y: -200px;
     background-size: auto;
@@ -402,6 +403,10 @@ header .fas {
     font-weight: 200;
 }
 
+.nav a {
+    visibility: hidden;
+}
+
 .sluzby-box button {
     width: 150px;
     height: 40px;
@@ -509,4 +514,11 @@ header .fas {
     font-size: 15px;
     color: #adadad;
     font-weight: 200;
+}
+
+.intro h1,
+.intro h2,
+.intro img,
+.intro button {
+    visibility: hidden;
 }
