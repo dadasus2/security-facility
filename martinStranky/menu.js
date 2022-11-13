@@ -20,21 +20,29 @@ window.addEventListener('scroll', function () {
 });
 
 
-gsap.from('.nav a', {
-    autoAlpha: 0, y: -200, ease: "power4.out", stagger: 0.1, duration: 2
-})
 
-gsap.from('.intro h1', {
-    opacity: 0, autoAlpha: 0, y: -400, ease: "power4.out", delay: 1, duration: 2
+const TL = gsap.timeline()
+
+TL.from('.logo', {
+    autoAlpha: 0, x: -200, ease: "power4.out", duration: 2,
 })
-gsap.from('.intro h2', {
-    scale: 0, opacity: 0, autoAlpha: 0, ease: "power4.out", delay: 1.5, duration: 2
-})
-gsap.from('.intro img', {
-    opacity: 0, autoAlpha: 0, ease: "power4.out", delay: 2, duration: 1, height: 0
-})
-gsap.from('.intro button', {
-    opacity: 0, autoAlpha: 0, ease: "power4.out", delay: 2.3, duration: 2,
-})
+    .from('.nav a', {
+        autoAlpha: 0, y: -200, ease: "power4.out", duration: 2, stagger: 0.1
+    }, '<')
+    .from('.intro h1', {
+        opacity: 0, autoAlpha: 0, y: -400, ease: "power4.out", duration: 1.5
+    }, '-=1.7')
+    .from('.intro h2', {
+        scale: 0, opacity: 0, autoAlpha: 0, ease: "power4.out", duration: 1.5
+    }, '-=1.7')
+    .from('.intro img', {
+        opacity: 0, autoAlpha: 0, ease: "power4.out", height: 0, duration: 1.5
+    }, '-=1.7')
+    .from('.intro button', {
+        opacity: 0, autoAlpha: 0, ease: "power4.out", duration: 1.5
+    }, '-=1.7')
+
+
+
 
 

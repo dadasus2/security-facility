@@ -144,8 +144,8 @@ header .fas {
 }
 
 .layout {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +159,8 @@ header .fas {
     width: 100vw;
     justify-content: space-between;
 }
+
+
 
 .left {
     display: flex;
@@ -197,6 +199,7 @@ header .fas {
     border-radius: 7px;
     border: none;
     padding: 5px 10px;
+    margin-top: 5px;
     color: white;
 }
 
@@ -235,6 +238,39 @@ header .fas {
     }
 }
 
+@media(max-width:1130px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right {
+        margin-right: 0%;
+    }
+
+    .left {
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+@media(max-width:1000px) {
+    .contact-form {
+        margin-top: 30px;
+        width: 350px;
+        height: 400px;
+        background: rgba(254, 254, 254, 0.08);
+        backdrop-filter: blur(12px);
+        border-radius: 21px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px 30px;
+    }
+}
+
+@media(max-width: 500px) {}
+
 .footer {
     width: 100vw;
     height: 50px;
@@ -242,6 +278,7 @@ header .fas {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
 }
 
 .footer h1 {
