@@ -269,7 +269,12 @@ header .fas {
     }
 }
 
-@media(max-width: 500px) {}
+@media(max-width:435px) {
+    .contact-form {
+        width: 280px;
+        height: 350;
+    }
+}
 
 .footer {
     width: 100vw;
@@ -285,10 +290,4 @@ header .fas {
     font-size: 15px;
     color: #adadad;
     font-weight: 200;
-}
-
-@media(max-width:550px) {
-    .footer {
-        margin-top: 50px;
-    }
 }
