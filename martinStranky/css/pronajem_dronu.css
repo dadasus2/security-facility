@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Exo';
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+}
+
+.logo {
+    position: relative;
+    width: 150px;
+    padding: 0 10px;
+}
+
+.logo2 {
+    width: 150px;
+    padding: 0 10px;
+}
+
+@media(max-width:1090px) {
+
+    .logo,
+    .logo2 {
+        width: 100px;
+    }
+
+
+}
+
+@media(max-width:930px) {
+
+    .logo,
+    .logo2 {
+        width: 150px;
+    }
+}
+
+@media(max-width:530px) {
+
+    .logo,
+    .logo2 {
+        width: 100px;
+    }
+
+    .logos {
+        top: 25px;
+    }
+}
+
+.nav {
+    height: 80px;
+    transition: .3s;
+    position: relative;
+    z-index: 100000;
+}
+
+.menu li {
+    font-size: 18px;
+    padding: 0 15;
+    line-height: 80px;
+    height: 100%;
+    transition: .2s;
+}
+
+a {
+    text-decoration: none;
+    margin-top: -3px;
+}
+
+.menu a li:hover {
+    color: #0080C2;
+    transition: .2s;
+}
+
+.menu {
+    display: flex;
+    float: right;
+    position: relative;
+    right: 3%;
+}
+
+header .fas {
+    display: none;
+}
+
+@media(max-width:1250px) {
+    .menu a li {
+        font-size: 17px;
+    }
+
+
+}
+
+
+
+@media(max-width:1300px) {
+    .menu a li {
+        font-size: 14px;
+        padding: 0 10;
+    }
+}
+
+@media(max-width:950px) {
+    .menu {
+        flex-direction: column;
+        background: rgba(37, 37, 37, 0.89);
+        height: 100vh;
+        width: 60%;
+        right: -60%;
+        position: fixed;
+        transition: .3s;
+        text-align: center;
+    }
+
+    header .fas {
+        display: block;
+        font-size: 30;
+    }
+
+    header .fa-bars {
+        position: absolute;
+        right: 5%;
+        line-height: 80px;
+        z-index: 0;
+    }
+
+    header .fa-times {
+        position: absolute;
+        right: 10%;
+        top: 2.5%;
+    }
+
+    .menu a {
+        font-size: 20px;
+        position: relative;
+        top: 100;
+    }
+
+    .menu li {
+        height: 70px;
+    }
+
+    .menu-show {
+        right: 0;
+        transition: .3s;
+        z-index: 20;
+        box-shadow: 0px 0px 10px rgb(46, 39, 41);
+    }
+
+
+}
+
+.uvod {
+    position: relative;
+    background-image: url('../images/pronajemBG.png');
+    height: 100vh;
+    background-size: auto;
+}
+
+.intro {
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 55px;
+}
+
+.intro h2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+.footer {
+    width: 100vw;
+    height: 50px;
+    background: #002B4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer h1 {
+    font-size: 15px;
+    color: #adadad;
+    font-weight: 200;
+}
+
+@media(max-width:550px) {
+    .footer {
+        margin-top: 50px;
+    }
+}
