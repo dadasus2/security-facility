@@ -8,7 +8,7 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/contact.css">
-    <title>Detektivní sluzby</title>
+    <title>Detektivní služby</title>
     <link rel="icon" type="image/png" href="images/icons/logoSecurity.png" />
 
 </head>
@@ -34,7 +34,7 @@
                 <a href="facility.html">
                     <li>Facility</li>
                 </a>
-                <a href="pronajem_dronu.html">
+                <a href="#">
                     <li>Pronájem dronů</li>
                 </a>
                 <a href="contact.html">
@@ -47,28 +47,44 @@
             <div class="content">
                 <div class="left">
                     <h1>Kontakt</h1>
-                    <a href="mailto:marfius@seznam.cz">
-                        <p> Email: marfius@seznam.cz</p>
-                    </a>
+                    <p>Email: marfius@seznam.cz</p>
                     <p>Tel.: 608 979 749</p>
                 </div>
                 <div class="right">
-                    <form action="">
+                    <form action="" method="post">
                         <div class="contact-form">
                             <div class="contact-row">
-                                <input type="text" placeholder="Jméno">
-                                <input type="email" placeholder=" E-mail">
+                                <input type="text" name="name" placeholder="Jméno">
+                                <input type="email" name="mail" placeholder=" E-mail">
                             </div><br>
-                            <input type="text" placeholder="Předmět"><br>
+                            <input type="text" name="subject" placeholder="Předmět"><br>
                             <textarea name="" id="" cols="20" rows="10" placeholder="Zpráva"></textarea> <br>
-                            <input id="submit" type="submit">
+                            <input id="submit" name="submit" type="submit" value="Odeslat">
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <?php
+        if (isset($_POST['submit'])){
+            $name = $_POST['name'];
+            $mailFrom = $_POST['mail'];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
 
+            if (empty($name) || empty($mailFrom) || empty($subject) || empty($message)){
+                echo "<p class=''>Vyplňte všechna pole.</p>";
+            } else{
+                $mailTo = "bohatec87@gmail.com";
+                $headers = "From:" . $mailFrom;
+                $txt = "Byl vyplněn formulář na cenystav.cz! " ."Jméno odesílatele je: " .  $name . " / Zpráva odesílatele je: ". $message;
+
+                mail($mailTo,$subject, $txt, $headers);
+                echo "<p class=''>Formulář byl odeslán!.</p>";
+                        }
+                    }
+                    ?>
     <div class="footer">
         <h1>
             © 2022 security-facility.cz | <a href="http://drie.cz/">www.drie.cz</a>
