@@ -34,7 +34,7 @@
                 <a href="facility.html">
                     <li>Facility</li>
                 </a>
-                <a href="#">
+                <a href="pronajem_dronu.html">
                     <li>Pronájem dronů</li>
                 </a>
                 <a href="contact.html">
@@ -76,9 +76,9 @@
             if (empty($name) || empty($mailFrom) || empty($subject) || empty($message)){
                 echo "<p class=''>Vyplňte všechna pole.</p>";
             } else{
-                $mailTo = "bohatec87@gmail.com";
+                $mailTo = "marfius@sezna.cz";
                 $headers = "From:" . $mailFrom;
-                $txt = "Byl vyplněn formulář na cenystav.cz! " ."Jméno odesílatele je: " .  $name . " / Zpráva odesílatele je: ". $message;
+                $txt = "Byl vyplněn formulář na security-facility.cz! " ."Jméno odesílatele je: " .  $name . " / Zpráva odesílatele je: ". $message;
 
                 mail($mailTo,$subject, $txt, $headers);
                 echo "<p class=''>Formulář byl odeslán!.</p>";
