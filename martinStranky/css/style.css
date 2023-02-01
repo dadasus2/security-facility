@@ -79,7 +79,7 @@ body {
 }
 
 .menu li {
-    font-size: 18px;
+    font-size: 14px;
     padding: 0 15;
     line-height: 80px;
     height: 100%;
@@ -107,23 +107,18 @@ header .fas {
     display: none;
 }
 
-@media(max-width:1250px) {
+
+
+
+
+@media(max-width:1600px) {
     .menu a li {
-        font-size: 17px;
-    }
-
-}
-
-
-
-@media(max-width:1300px) {
-    .menu a li {
-        font-size: 14px;
+        font-size: 12px;
         padding: 0 10;
     }
 }
 
-@media(max-width:950px) {
+@media(max-width:1400px) {
     .menu {
         flex-direction: column;
         background: rgba(37, 37, 37, 0.89);
@@ -156,7 +151,7 @@ header .fas {
     .menu a {
         font-size: 20px;
         position: relative;
-        top: 100;
+        top: 50px;
     }
 
     .menu li {
@@ -393,7 +388,7 @@ header .fas {
     background-image: url('../images/sluzbyBG.jpg');
     position: relative;
     width: 100vw;
-    height: 1000;
+    height: 1300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,7 +407,7 @@ header .fas {
 .sluzby-layout {
     position: relative;
     width: 900px;
-    height: 800px;
+    height: 1400px;
     background: rgba(254, 254, 254, 0.08);
     box-shadow: 11px 16px 8px 2px rgba(0, 0, 0, 0.15);
     border-radius: 21px;
@@ -471,32 +466,37 @@ header .fas {
 }
 
 .odposlech {
-    font-size: 17px;
+    font-size: 16px;
 }
+
 
 .sluzby-box h2 {
     font-size: 20px;
 }
 
+.zbozi {
+    font-size: 10px;
+}
+
 @media(max-width:980px) {
     .sluzby {
-        height: 1400px;
+        height: 2000px;
     }
 
     .sluzby-layout {
         width: 600px;
-        height: 1200px;
+        height: 1900px;
     }
 }
 
 @media(max-width:630px) {
     .sluzby {
-        height: 1200px;
+        height: 1700px;
     }
 
     .sluzby-layout {
         width: 500px;
-        height: 1000px;
+        height: 1600px;
     }
 
     .sluzby-box {
@@ -515,12 +515,12 @@ header .fas {
 
 @media(max-width:510px) {
     .sluzby {
-        height: 1200px;
+        height: 1700px;
     }
 
     .sluzby-layout {
         width: 375px;
-        height: 1000px;
+        height: 1500px;
     }
 
     .sluzby-box {

@@ -37,7 +37,16 @@
                 <a href="pronajem_dronu.html">
                     <li>Pronájem dronů</li>
                 </a>
-                <a href="contact.html">
+                <a href="prep_cenin.html">
+                    <li>Přepravy cenin</li>
+                </a>
+                <a href="doprovody.html">
+                    <li>Doprovody cenného zboží</li>
+                </a>
+                <a href="prep_sluzby.html">
+                    <li>Přepravní služby</li>
+                </a>
+                <a href="contact.php">
                     <li>Kontakt</li>
                 </a>
             </ul>
@@ -50,41 +59,9 @@
                     <p>Email: marfius@seznam.cz</p>
                     <p>Tel.: 608 979 749</p>
                 </div>
-                <div class="right">
-                    <form action="" method="post">
-                        <div class="contact-form">
-                            <div class="contact-row">
-                                <input type="text" name="name" placeholder="Jméno">
-                                <input type="email" name="mail" placeholder=" E-mail">
-                            </div><br>
-                            <input type="text" name="subject" placeholder="Předmět"><br>
-                            <textarea name="" id="" cols="20" rows="10" placeholder="Zpráva"></textarea> <br>
-                            <input id="submit" name="submit" type="submit" value="Odeslat">
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
-    <?php
-        if (isset($_POST['submit'])){
-            $name = $_POST['name'];
-            $mailFrom = $_POST['mail'];
-            $subject = $_POST['subject'];
-            $message = $_POST['message'];
-
-            if (empty($name) || empty($mailFrom) || empty($subject) || empty($message)){
-                echo "<p class=''>Vyplňte všechna pole.</p>";
-            } else{
-                $mailTo = "marfius@sezna.cz";
-                $headers = "From:" . $mailFrom;
-                $txt = "Byl vyplněn formulář na security-facility.cz! " ."Jméno odesílatele je: " .  $name . " / Zpráva odesílatele je: ". $message;
-
-                mail($mailTo,$subject, $txt, $headers);
-                echo "<p class=''>Formulář byl odeslán!.</p>";
-                        }
-                    }
-                    ?>
     <div class="footer">
         <h1>
             © 2022 security-facility.cz | <a href="http://drie.cz/">www.drie.cz</a>
