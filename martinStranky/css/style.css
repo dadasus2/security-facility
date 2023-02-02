@@ -435,6 +435,12 @@ header .fas {
     font-weight: 200;
 }
 
+@media(max-width: 510px) {
+    .sluzby-box p {
+        font-size: 12px;
+    }
+}
+
 .nav a {
     visibility: hidden;
 }
