@@ -21,6 +21,8 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: #003f3160;
+    background-image: url('images/detBG.jpg');
+    background-size: cover;
 }
 
 .logos {
@@ -170,7 +172,7 @@ header .fas {
 
 .uvod {
     position: relative;
-    background-image: url('images/detBG.jpg');
+    background: none;
     height: 100vh;
     background-size: auto;
 }

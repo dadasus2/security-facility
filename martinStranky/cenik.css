@@ -20,6 +20,8 @@ html,
 body {
     width: 100%;
     overflow-x: hidden;
+    background-image: url('images/cenikBG.jpg');
+    background-size: cover;
 }
 
 .logos {
@@ -169,7 +171,7 @@ header .fas {
 
 .uvod {
     position: relative;
-    background-image: url('images/cenikBG.jpg');
+    background: none;
     height: 100vh;
     background-size: auto;
 }
