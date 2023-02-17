@@ -79,7 +79,7 @@ body {
 }
 
 .menu li {
-    font-size: 14px;
+    font-size: 17px;
     padding: 0 15;
     line-height: 80px;
     height: 100%;
@@ -111,9 +111,9 @@ header .fas {
 
 
 
-@media(max-width:1600px) {
+@media(max-width:1800px) {
     .menu a li {
-        font-size: 12px;
+        font-size: 13px;
         padding: 0 10;
     }
 }
